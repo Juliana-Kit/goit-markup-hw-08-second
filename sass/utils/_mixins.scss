@@ -1,0 +1,29 @@
+@mixin align() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin btn($bgc, $brr, $brc, $crs) {
+    background-color: $bgc;
+    border-radius: $brr;
+    border-color: $brc;
+    cursor: $crs;
+
+}
+
+@mixin font($ffm, $fw, $fsz, $lnh, $lts: 0.03em) {
+    font-family: $ffm;
+    font-weight: $fw;
+    font-size: $fsz;
+    line-height: $lnh/$fsz;
+    letter-spacing: $lts;
+}
+
+@mixin icon($wdth, $hgt, $brr, $fill, $bgc) {
+    width: $wdth;
+    height: $hgt;
+    border-radius: $brr;
+    fill: $fill;
+    background-color: $bgc;
+}
