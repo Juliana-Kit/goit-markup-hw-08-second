@@ -1,0 +1,33 @@
+.icon-list {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.icon-list__item {
+    width: 44px;
+    height: 44px;
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+}
+
+
+
+
+
+.icon-list__link {
+    transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
+
+    @include icon(100%,100%,50%,#AFB1B8,#fff);
+    @include align();
+
+        &:hover,
+        &:focus {
+            fill: #ffffff;
+            background-color: var(--accent-color);
+        }
+
+}
+

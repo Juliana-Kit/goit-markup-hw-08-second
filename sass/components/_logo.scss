@@ -1,0 +1,23 @@
+.logo {
+    /* transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: color 250ms var(--timing-function);
+
+    margin-right: 90px;
+    padding: 24px 0;
+    display: block;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+.logo--accent {
+    color: var(--accent-color);
+}
